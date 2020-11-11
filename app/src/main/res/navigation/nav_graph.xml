@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recyclerAvionFragment">
+    <fragment
+        android:id="@+id/recyclerAvionFragment"
+        android:name="com.example.p6recycleview.RecyclerAvionFragment"
+        android:label="fragment_recycler_avion"
+        tools:layout="@layout/fragment_recycler_avion" >
+        <action
+            android:id="@+id/action_recyclerAvionFragment_to_mostrarAvionFragment"
+            app:destination="@id/mostrarAvionFragment" />
+        <action
+            android:id="@+id/action_recyclerAvionFragment_to_nuevoAvionFragment"
+            app:destination="@id/nuevoAvionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mostrarAvionFragment"
+        android:name="com.example.p6recycleview.MostrarAvionFragment"
+        android:label="fragment_mostrar_avion"
+        tools:layout="@layout/fragment_mostrar_avion" />
+    <fragment
+        android:id="@+id/nuevoAvionFragment"
+        android:name="com.example.p6recycleview.NuevoAvionFragment"
+        android:label="fragment_nuevo_avion"
+        tools:layout="@layout/fragment_nuevo_avion" />
+    <fragment
+        android:id="@+id/floatingActionButton"
+        android:name="com.example.p6recycleview.FloatingActionButton"
+        android:label="fragment_floating_action_button"
+        tools:layout="@layout/fragment_floating_action_button" />
+</navigation>
